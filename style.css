@@ -53,4 +53,32 @@ html {
     color: white;
     text-shadow: 0 2px 5px rgba(255, 255, 255, .8)
 }
+.section-title {
+    font-family: Cousine;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+p {
+    font-family: Cousine;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
 
+.card-title {
+    font-family: Cousine;
+}
+.card-text {
+    font-family: Cousine;
+    font-size: 0.75rem;
+}
+a {
+    font-family: Cousine;
+    margin-top: auto;
+}
+.card-body {
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.1);
+}
+.card-img-top {
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.3);
+}

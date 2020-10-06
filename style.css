@@ -65,6 +65,7 @@ p {
 
 .card-title {
     font-family: Cousine;
+    font-size: 1rem;
 }
 .card-text {
     font-family: Cousine;
@@ -102,5 +103,101 @@ a {
 .style {
     color: white;
 }
-
-
+.nav-item {
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-shadow: 0 2px 5px rgba(255, 255, 255, .7);
+    font-size: 0.75rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav-item:hover {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+.bgcolor {
+    background: transparent !important;
+    transition: 0.5s ease;
+}
+.bgcolor.scrolled {
+    background-color: #7da8da !important;
+}
+.contact-card-text {
+    font-family: Cousine;
+    font-size: 0.70rem;
+}
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #7da8da;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #loader {
+    /* Uncomment this to make it run! */
+    /*
+       animation: loader 5s linear infinite; 
+    */
+    
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+  }
+  @keyframes loader {
+    0% { left: -100px }
+    100% { left: 110%; }
+  }
+  #box {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    animation: animate .5s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+  }
+  @keyframes animate {
+    17% { border-bottom-right-radius: 3px; }
+    25% { transform: translateY(9px) rotate(22.5deg); }
+    50% {
+      transform: translateY(18px) scale(1,.9) rotate(45deg) ;
+      border-bottom-right-radius: 40px;
+    }
+    75% { transform: translateY(9px) rotate(67.5deg); }
+    100% { transform: translateY(0) rotate(90deg); }
+  } 
+  #shadow { 
+    width: 50px;
+    height: 5px;
+    background: #000;
+    opacity: 0.1;
+    position: absolute;
+    top: 59px;
+    left: 0;
+    border-radius: 50%;
+    animation: shadow .5s linear infinite;
+  }
+  @keyframes shadow {
+    50% {
+      transform: scale(1.2,1);
+    }
+  }
+  
+  
+  body {
+    background: #6997DB; 
+    overflow: hidden;
+  }
+  h4 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    font-weight: 200;
+    opacity: .5;
+      font-family: sans-serif;
+    color: #fff;
+  }

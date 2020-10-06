@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kimberly's Website</title>
     <meta name="description" content="A computer science project portfolio.">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cousine">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<section id= "navigation">
-    <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+<!--Navigation Bar Starts-->
+    <nav class="navbar navbar-expand-lg fixed-top bgcolor">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,9 +29,6 @@
                     <a class="nav-item nav-link" href="#">Technical Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item nav-link" href="#">Technical Skills</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-item nav-link" href="#">Projects</a>
                 </li>
                 <li class="nav-item">
@@ -41,8 +38,8 @@
         </div>
         </div>
       </nav>
-      </div>
-</section>
+<!--Navigation bar ends-->      
+
 <!-- Hero Section Start-->
 <section id= "hero">
     <div class="hero container row">
@@ -51,25 +48,13 @@
             <h1>name is Kimberly Cao</h1>
             <h1>and I'm <span class="animate"></span></h1>
         </div>
-        <script src="typed.js"></script>
-        <script>
-            var typed = new Typed('.animate', {
-              strings: [
-                  "a student.",
-                  "a developer.",
-                  "an ML enthusiast."
-              ],
-              typeSpeed: 50,
-              backSpeed: 50,
-              loop: true
-            });
-          </script>
         <div class ="col-md-6 d-flex justify-content-center">
             <img class= "img" src="/images/profile-pic.png">
         </div>
     </div>
 </section>
 <!-- Hero Section End-->
+<!-- About Me Section Starts-->
 <section>
     <div class= "container">
         <div>
@@ -106,7 +91,7 @@
                         <h5 class= "card-title">Calendarly</h5>
                         <p class = "card-text">A calendar app made using Dart and Flutter. It utilizes the Firebase Authentication SDK and Cloud Firestore in order for users to sign-in
                             and view their tasks.</p>
-                        <a href="#"><i class= "fa fa-github" style= "font-size: 48px; color:rgb(107, 165, 219)"></i></a>
+                        <a href="https://github.com/kimberlycao/Calendarly"><i class= "fa fa-github" style= "font-size: 48px; color:rgb(107, 165, 219)"></i></a>
                     </div>
                 </div>
             </div>
@@ -116,7 +101,7 @@
                     <div class= "card-body d-flex flex-column">
                         <h5 class= "card-title">Personal Website</h5>
                         <p class = "card-text">A computer science portfolio website made using HTML, CSS, JS, and Bootstrap.</p>
-                        <a href="#"><i class= "fa fa-github" style= "font-size: 48px; color:rgb(107, 165, 219)"></i></a>                    
+                        <a href="https://github.com/kimberlycao/Personal-Website"><i class= "fa fa-github" style= "font-size: 48px; color:rgb(107, 165, 219)"></i></a>                    
                     </div>
                 </div>
             </div>
@@ -125,13 +110,69 @@
     </div>
 </section>
 
-<section>
+<section id="contact-me">
     <div class= "container">
     <div>
+        <div>
         <h1 class= "section-title">Contact Me</h1>
-
+    </div>
+    <div class= "row justify-content-center">
+        <div class= "col-md-3 d-flex">
+            <div class = "card text-center justify-content-center">
+                <div class= "card-body d-flex flex-column">
+                    <img src= "/images/envelope.png" alt= "" class= "img-fluid w-25 mb-3 mx-auto d-block">
+                    <h3 class= "card-title">Email</h3>
+                    <p class= "contact-card-text">kimberly.cao13@gmail.com</p>
+                </div>
+            </div>
+        </div>
+                <div class= "col-md-3 d-flex">
+            <div class = "card text-center justify-content-center">
+                <div class= "card-body d-flex flex-column">
+                    <img src= "/images/linkedin.png" alt= "" class= "img-fluid w-25 mb-3 mx-auto d-block">
+                    <h3 class= "card-title">LinkedIn</h3>
+                    <div class="contact-card-text">
+                        <a href= "#">www.linkedin.com/in/kimberly-cao-407499146</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    </div>
+    </div>
 </section>
+
+<!--Loader-->
+<div class="loader-wrapper">
+    <div id="loader">
+        <div id="shadow"></div>
+        <div id="box"></div>
+      </div>
+</div>
+<!--Script file-->
+<script src="typed.js"></script>
+<script>
+    var typed = new Typed('.animate', {
+      strings: [
+          "a student.",
+          "a developer.",
+          "an ML enthusiast."
+      ],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true
+    });
+</script>
+<script>
+    $(window).scroll(function() {
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 200);
+    });
+</script>
+<script>
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut("slow");
+    });
+</script>
+
 </body>
 </html>

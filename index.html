@@ -20,19 +20,19 @@
           <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNavAltMarkup">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-item nav-link" href="#">Top</a>
+                    <a class="nav-item nav-link flex-item" href="#hero">Top</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item nav-link" href="#">About Me</a>          
+                    <a class="nav-item nav-link flex-item" href="#about-me">About Me</a>          
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item nav-link" href="#">Technical Skills</a>
+                    <a class="nav-item nav-link flex-item" href="#technical-skills">Technical Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item nav-link" href="#">Projects</a>
+                    <a class="nav-item nav-link flex-item" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item nav-link" href="#">Contact Me</a>
+                    <a class="nav-item nav-link flex-item" href="#contact-me">Contact Me</a>
                 </li>
             </ul>
         </div>
@@ -43,23 +43,28 @@
 <!-- Hero Section Start-->
 <section id= "hero">
     <div class="hero container row">
-        <div class="col-md-6">
+        <div class="col-md-8">
             <h1>Hello World, my</h1>
             <h1>name is Kimberly Cao</h1>
             <h1>and I'm <span class="animate"></span></h1>
+            <div>
+                <a href="https://github.com/kimberlycao"><i class= "fa fa-github" style= "font-size: 60px; color:rgb(107, 165, 219)"></i></a>
+            </div>
         </div>
-        <div class ="col-md-6 d-flex justify-content-center">
+        <div class ="col-md-4 d-flex justify-content-center">
             <img class= "img" src="/images/profile-pic.png">
         </div>
     </div>
 </section>
 <!-- Hero Section End-->
 <!-- About Me Section Starts-->
-<section>
+<section id= "about-me">
     <div class= "container">
+        <div>
         <div>
             <h1 class= "section-title">About Me</h1>
             <p>Hi there! My name is Kimberly and I'm a student at the University of Toronto. I'm always looking to add to my skill set, enjoy learning with friends, and working on group projects. In my spare time, I enjoy cooking and baking (because what's a meal without dessert?), 3D printing, and playing Tetris.</p>
+        </div>
         </div>
     </div>
 </section>
@@ -67,15 +72,72 @@
 <section id= "technical-skills">
     <div class= "container">
         <div>
-            <h1 class= "section-title">Technical Skills</h1>
-            <p>Here are some of the things that I know:</p>
-            <a class= "button" href="#">Resume</a>
+            <div>
+                <h1 class= "section-title">Technical Skills</h1>
+                <p>Here are some of the things that I know:</p>
+            </div>
+            <div>
+                <div class= "row">
+                    <div class= "col-md-6 d-flex mb-5">
+                        <div class= "card-wrapper">
+                            <div class= "content">
+                                <div class= "face-front z-depth-2 d-flex">
+                                    <div class= "card-body d-flex align-items-center">
+                                        <div>
+                                        <h5 class= "card-title">Languages</h5>
+                                        <p class = "card-text">From most to least proficient:</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class= "face-back z-depth-2 d-flex">
+                                    <div class= "card-body d-flex align-items-center justify-content-center">
+                                        <ul>
+                                            <li>Python</li>
+                                            <li>Java</li>
+                                            <li>Dart</li>
+                                            <li>HTML/CSS</li>
+                                            <li>R</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class= "col-md-6 d-flex mb-5">
+                        <div class= "card-wrapper">
+                            <div class= "content">
+                                <div class= "face-front z-depth-2 d-flex">
+                                    <div class= "card-body d-flex align-items-center">
+                                        <div>
+                                        <h5 class= "card-title">Frameworks, Software, Platforms and Libraries</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class= "face-back z-depth-2 d-flex">
+                                    <div class= "card-body d-flex align-items-center justify-content-center">
+                                        <ul>
+                                            <li>Flutter</li>
+                                            <li>Bootstrap 4</li>
+                                            <li>Android Studio</li>
+                                            <li>Firebase</li>
+                                            <li>PyTorch</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a class= "button" href="#">Resume</a>
+            </div>
         </div>
     </div>
 </section>
 
 
-<section>
+<section id= "projects">
     <div class= "container text-center">
         <div>
         <div class= "col">
